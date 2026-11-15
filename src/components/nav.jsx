@@ -1,20 +1,24 @@
-import React from 'react'
+import { Link } from 'react-router'
 
 const Nav = () => {
   return (
-    <>
-    <div className="navbar bg-cyan-500 shadow-sm">
-  <div className="navbar-start">
-    <div className=" normal-case text-xl">by Dagim</div>
-  </div>
-  <div className="navbar-center">
-    <div className=" normal-case text-xl">Notes App</div>
-  </div>  
-  <div className="navbar-end">
-    <a className="btn">add new note</a>
-  </div>
-</div>
-    </>
+    <div className="navbar bg-cyan-500 shadow-sm text-neutral-content">
+      <div className="navbar-start">
+        <Link to="/" className="btn btn-ghost normal-case text-xl font-bold text-white">
+          by Dagim
+        </Link>
+      </div>
+      <div className="navbar-center">
+        <Link to="/" className="btn btn-ghost normal-case text-xl font-bold text-white">
+          Notes App
+        </Link>
+      </div>
+      <div className="navbar-end">
+        <Link to="/create" className="btn btn-neutral text-white">
+          add new note
+        </Link>
+      </div>
+    </div>
   )
 }
 
