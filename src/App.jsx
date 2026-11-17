@@ -4,7 +4,6 @@ import Createpage from './pagas/createpage.jsx'
 import Notedetails from './pagas/notedetails.jsx'
 import Nav from './components/nav.jsx'
 
-
 export const App = () => {
   return (
     <div className="min-h-screen bg-base-100">
